@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLOH2QjbIjFeQG1qrXL_fxn5RTNKFsobieg&usqp=CAU) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+.clock{
+  width: 40rem;
+  height: 43rem;
+  border: 20px ;
+  border-radius: 35%;
+  background: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.secs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15rem;
+    width: 1rem;
+    background-color: blue;
+    transform: translateX(-50%);
+    transform-origin:25% 0 ;
+    border-radius: 35%;
+
+}
+.mins{
+    position: absolute;
+    top: 51%;
+    left: 49%;
+    height: 12rem;
+    width: 1rem;
+    background-color: rgb(0, 21, 255);
+    transform: translateX(-50%);
+    transform-origin:25% 0 ;
+    border-radius: 20%;
+}
+
+.hours{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 8rem;
+    width: 1rem;
+    background-color: blue;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    transform-origin:25% 0 ;
+}
+
+.dot{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
